@@ -21,6 +21,8 @@ enum custom_keycodes {
   Graphical layout can be viewed at
 
   http://www.keyboard-layout-editor.com/#/gists/e2831bdbee9113508428d49c9a963a06
+  TODO perhaps numpad should go to separate layer, free up symbols ?
+  TODO free alt and leverage Meh/Super in xmonad
 *******************************************************************************/
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -29,18 +31,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
         KC_HOME,   KC_1,    KC_2,           KC_3,    KC_4,   KC_5,   KC_TRNS,
-        KC_TAB,    KC_Q,    KC_W,           KC_E,    KC_R,   KC_T,   KC_LPRN,
+        KC_TAB,    KC_Q,    KC_W,           KC_E,    KC_R,   KC_T,   KC_CAPS,
         OSL(SYMB), KC_A,    KC_S,           KC_D,    KC_F,   KC_G,
-        OSM(MOD_LSFT),   LT(MDIA,KC_Z),    LT(MOUSE,KC_X),  KC_C,    KC_V,   KC_B,   KC_LBRC,
+        OSM(MOD_LSFT),   LT(MDIA,KC_Z),    LT(MOUSE,KC_X),  KC_C,    KC_V,   KC_B,   KC_PLUS,
         MO(FRMW),   KC_TRNS, KC_TRNS,        KC_LCTL, ALT_T(KC_ESC),
                                                KC_BSLS,KC_TRNS,
                                                                 KC_TRNS,
                                                KC_SPC, KC_TRNS, KC_TRNS,
         // right hand
         KC_TRNS,  KC_6,   KC_7,  KC_8,   KC_9,   KC_0,    KC_END,
-        KC_RPRN,  KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_QUOT,
+        KC_TRNS,  KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_QUOT,
                   KC_H,   KC_J,  KC_K,   KC_L,   KC_SCLN, OSL(SYMB),
-        KC_RBRC,  KC_N,   KC_M,  LT(SCRLL, KC_COMM),LT(MOUSE, KC_DOT), LT(MDIA,KC_SLSH), OSM(MOD_RSFT),
+        KC_UNDS,  KC_N,   KC_M,  LT(SCRLL, KC_COMM),LT(MOUSE, KC_DOT), LT(MDIA,KC_SLSH), OSM(MOD_RSFT),
                   ALT_T(KC_ENT), KC_RCTL,KC_TRNS,KC_TRNS,KC_TRNS,
         KC_TRNS,  KC_DLR,
         KC_TRNS,
