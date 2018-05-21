@@ -32,43 +32,43 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
         KC_HOME,   KC_1,    KC_2,           KC_3,    KC_4,   KC_5,   KC_TRNS,
-        KC_TAB,    KC_Q,    KC_W,           KC_E,    KC_R,   KC_T,   KC_CAPS,
+        KC_TAB,    KC_Q,    KC_W,           KC_E,    KC_R,   KC_T,   KC_TRNS,
         OSL(SYMB), KC_A,    KC_S,           KC_D,    KC_F,   KC_G,
-        OSM(MOD_LSFT),   LT(MDIA,KC_Z),    KC_X,  LT(MOUSE,KC_C),    LT(NUM,KC_V),   KC_B,   KC_EQL,
+        OSM(MOD_LSFT),   LT(MDIA,KC_Z),    KC_X,  LT(MOUSE,KC_C),    LT(NUM,KC_V),   KC_B,   LCTL(KC_MINS),
         MO(FRMW),   KC_TRNS, KC_TRNS,        KC_LCTL, ALT_T(KC_ESC),
-                                               KC_BSLS,KC_TRNS,
+                                               KC_TRNS,KC_TRNS,
                                                                 KC_TRNS,
-                                               KC_SPC, KC_TRNS, KC_TRNS,
+                                               KC_SPC, KC_LT, KC_TRNS,
         // right hand
         KC_TRNS,  KC_6,   KC_7,  KC_8,   KC_9,   KC_0,    KC_END,
         KC_TRNS,  KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_QUOT,
                   KC_H,   KC_J,  KC_K,   KC_L,   KC_SCLN, OSL(SYMB),
-        KC_MINS,  KC_N,   KC_M,  LT(MOUSE, KC_COMM),LT(SCRLL, KC_DOT), LT(MDIA,KC_SLSH), OSM(MOD_RSFT),
+        LCTL(KC_PLUS),  KC_N,   KC_M,  LT(MOUSE, KC_COMM),LT(SCRLL, KC_DOT), LT(MDIA,KC_SLSH), OSM(MOD_RSFT),
                   ALT_T(KC_ENT), KC_RCTL,KC_TRNS,KC_TRNS,KC_TRNS,
-        KC_TRNS,  KC_DLR,
+        KC_TRNS,  KC_TRNS,
         KC_TRNS,
-        KC_TRNS,  KC_TRNS, KC_BSPC
+        KC_TRNS,  KC_GT, KC_BSPC
     ),
 // SYMBOLS
 [SYMB] = LAYOUT_ergodox(
        // left hand
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
-       KC_PLUS,KC_EXLM,KC_AT,  KC_LCBR,KC_RCBR,KC_PIPE,KC_TRNS,
-       KC_TRNS,KC_AMPR,KC_DLR, KC_LPRN,KC_RPRN,KC_GRV,
-       OSM(MOD_LSFT),KC_PERC,KC_CIRC,KC_LBRC,KC_RBRC,KC_TILD,KC_TRNS,
+       KC_TRNS,KC_EXLM,KC_AT,  KC_HASH,KC_LCBR,KC_TRNS,KC_TRNS,
+       KC_TRNS,KC_CIRC,KC_AMPR, KC_PIPE,KC_LPRN,KC_CAPS,
+       OSM(MOD_LSFT),KC_TILD,KC_GRV,KC_PERC,KC_LBRC,KC_TRNS,KC_TRNS,
           KC_TRNS,KC_TRNS,KC_TRNS,KC_LCTL,ALT_T(KC_ESC),
                                        KC_TRNS,KC_TRNS,
                                                KC_TRNS,
-                               KC_SPC,KC_MINS,KC_TRNS,
+                               KC_SPC,KC_TRNS,KC_TRNS,
        // right hand
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_7,   KC_8,    KC_9,    KC_ASTR, KC_UNDS,
-                KC_PERC, KC_4,   KC_5,    KC_6,    KC_PLUS, KC_TRNS,
-       KC_TRNS, KC_HASH, KC_1,   KC_2,    KC_3,    KC_BSLS, OSM(MOD_RSFT),
-                         ALT_T(KC_ENT),KC_RCTL,  KC_0,    KC_EQL,  KC_TRNS,
+       KC_TRNS, KC_TRNS, KC_RCBR,   KC_MINS,    KC_UNDS,    KC_ASTR, KC_TRNS,
+                KC_TRNS, KC_RPRN,   KC_EQL,    KC_PLUS,    KC_DLR, KC_TRNS,
+       KC_TRNS, KC_TRNS, KC_RBRC,   KC_TRNS,    KC_TRNS,    KC_BSLS, OSM(MOD_RSFT),
+                         ALT_T(KC_ENT),KC_RCTL,  KC_TRNS,    KC_TRNS,  KC_TRNS,
        KC_TRNS,KC_TRNS,
        KC_TRNS,
-       KC_TRNS,  KC_EQL, KC_DEL
+       KC_TRNS,  KC_TRNS, KC_DEL
 ),
 // MOUSE // Arrows
 [MOUSE] = LAYOUT_ergodox(
