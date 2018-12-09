@@ -22,6 +22,9 @@ enum custom_keycodes {
   Graphical layout can be viewed at
 
   http://www.keyboard-layout-editor.com/#/gists/e2831bdbee9113508428d49c9a963a06
+
+  TODO: layer scroll on top of mouse layer to reduce key dupe
+
 *******************************************************************************/
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -54,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______,KC_EXLM,KC_AT,  KC_HASH,KC_LCBR,_______,_______,
        _______,KC_CIRC,KC_AMPR, KC_PIPE,KC_LPRN,KC_CAPS,
        OSM(MOD_LSFT),KC_TILD,KC_GRV,KC_PERC,KC_LBRC,KC_HOME,_______,
-          _______,_______,_______,KC_LCTL,ALT_T(KC_ESC),
+          _______,_______,_______,_______,_______,
                                        _______,_______,
                                                _______,
                                KC_SPC,_______,_______,
@@ -63,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______, _______, KC_RCBR,   KC_MINS,    KC_UNDS,    KC_ASTR, _______,
                 _______, KC_RPRN,   KC_EQL,    KC_PLUS,    KC_DLR, _______,
        _______, KC_END, KC_RBRC,   _______,    _______,    KC_BSLS, OSM(MOD_RSFT),
-                         ALT_T(KC_ENT),KC_RCTL,  _______,    _______,  _______,
+                         _______,_______,  _______,    _______,  _______,
        _______,_______,
        _______,
        _______,  _______, KC_DEL
@@ -75,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______, _______, _______, KC_MS_U, _______, _______, _______,
        _______, _______, KC_MS_L, KC_MS_D, KC_MS_R, _______,
        _______, _______, _______, KC_MS_WH_DOWN, KC_MS_WH_UP, _______, _______,
-       _______, _______, _______, KC_LCTL, ALT_T(KC_ESC),
+       _______, _______, _______, _______, _______,
                                            _______, _______,
                                                     _______,
                                   KC_BTN1, KC_BTN2, _______,
@@ -84,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______,  _______, _______, KC_UP, _______, _______, _______,
                  _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,
        _______,  _______, _______, _______, _______, _______, _______,
-                       ALT_T(KC_ENT), KC_RCTL,_______,_______,_______,
+                       _______, _______,_______,_______,_______,
        _______, _______,
        _______,
        _______, _______, _______
@@ -95,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______, _______, _______, KC_WH_U, _______, _______, _______,
        _______, _______, KC_WH_L, KC_WH_D, KC_WH_R, _______,
        _______, _______, _______, _______, _______, _______, _______,
-       _______, _______, _______, KC_LCTL, ALT_T(KC_ESC),
+       _______, _______, _______, _______, _______,
                                            KC_BTN1, KC_BTN2,
                                                     _______,
                                   _______, _______, _______,
@@ -104,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______,  _______, _______, KC_UP, _______, _______, _______,
                  _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,
        _______,  _______, _______, _______, _______, _______, _______,
-                       ALT_T(KC_ENT), KC_RCTL,_______,_______,_______,
+                       _______, _______,_______,_______,_______,
        _______, _______,
        _______,
        _______, _______, _______
