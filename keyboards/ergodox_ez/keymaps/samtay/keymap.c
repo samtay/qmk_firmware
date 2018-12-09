@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MO(FRMW),   _______, _______,        KC_LCTL, ALT_T(KC_ESC),
                                                _______,_______,
                                                                 _______,
-                                               KC_SPC, KC_LT, _______,
+                                               KC_SPC, KC_LCMD, _______,
         // right hand
         _______,  KC_6,   KC_7,  KC_8,   KC_9,   KC_0,    _______,
         _______,  KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_QUOT,
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   ALT_T(KC_ENT), KC_RCTL,_______,_______,_______,
         _______,  _______,
         _______,
-        _______,  KC_GT, KC_BSPC
+        _______,  KC_RCMD, KC_BSPC
     ),
 // SYMBOLS
 [SYMB] = LAYOUT_ergodox(
