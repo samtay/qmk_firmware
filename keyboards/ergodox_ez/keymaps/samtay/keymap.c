@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
         _______,   KC_1,    KC_2,           KC_3,    KC_4,   KC_5,   _______,
-        KC_TAB,    KC_Q,    KC_W,           KC_E,    KC_R,   KC_T,   _______,
+        KC_TAB,    KC_Q,    KC_W,           KC_E,    KC_R,   KC_T,   KC_GRV,
         OSL(SYMB), KC_A,    KC_S,           KC_D,    KC_F,   KC_G,
         OSM(MOD_LSFT),   LT(MDIA,KC_Z),    KC_X,  LT(MOUSE,KC_C),    LT(NUM,KC_V),   KC_B,   LCTL(KC_MINS),
         MO(FRMW),   _______, _______,        KC_LCTL, ALT_T(KC_ESC),
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                KC_SPC, KC_LCMD, _______,
         // right hand
         _______,  KC_6,   KC_7,  KC_8,   KC_9,   KC_0,    _______,
-        _______,  KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_QUOT,
+        KC_GRV,   KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,    KC_QUOT,
                   KC_H,   KC_J,  KC_K,   KC_L,   KC_SCLN, OSL(SYMB),
         LCTL(KC_PLUS),  KC_N,   KC_M,  LT(MOUSE, KC_COMM),LT(SCRLL, KC_DOT), LT(MDIA,KC_SLSH), OSM(MOD_RSFT),
                   ALT_T(KC_ENT), KC_RCTL,_______,_______,_______,
