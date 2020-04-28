@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          _______,_______,  _______,    _______,  _______,
        _______,_______,
        _______,
-       _______,  _______, KC_DEL
+       _______,  _______, ______
 ),
 // MOUSE // Arrows
 [MOUSE] = LAYOUT_ergodox(
